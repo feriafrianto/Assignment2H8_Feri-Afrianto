@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style-profile.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">PRODUCT</a></li>
+            <li><a href="">GALLERY</a></li>
+            <li><a href="index.html">BLOG</a></li>
+            <li><a href="">INVENTORY</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="item-profile">
+            <img src="Foto.jpeg" alt="Foto Profile" class="avatar">
+        </div>
+        
+        <div class="item-profile" style="margin-right: 100px;">
+            <h1 id="nama">Feri Afrianto</h1>
+            <p id="role">Back End Developer</p>
+            <button id="kontak" onclick="TampilkanData()">Edit</button>
+            <button id="resume">Resume</button>
+        </div>
+        <div class="item-profile">
+            <p><span style="font-weight:bold">Availability</span> : <span id="availability">Full Time</span></p>
+            <p><span style="font-weight:bold">Usia</span> : <span id="usia">20</span></p>
+            <p><span style="font-weight:bold">Lokasi</span> : <span id="lokasi">Jakarta</span></p>
+            <p><span style="font-weight:bold">Pengalaman</span> : <span id="year">2</span></p>
+            <p><span style="font-weight:bold">Email</span> : <span id="email">feriafrianto7@gmail.com</span></p>
+        </div>
+    </div>
+    
+    <div class="container">
+        <form action="profile.html" id="form">
+            <label for="nama">Nama</label>
+            <input type="text" name="nama" id="input-nama" placeholder="Masukan nama anda"/>
+            <label for="role">Role</label>
+            <select name="role" id="input-role">
+                <option value="Back End Developer">Back End Developer</option>
+                <option value="Front End Developer">Front End Developer</option>
+            </select>
+            <label for="availability">Availability</label>
+            <input type="text" name="availability" id="input-availability"><br>
+            <label for="usia">Usia</label>
+            <input type="number" name="usia" id="input-usia"><br>
+            <label for="Lokasi">Lokasi</label>
+            <input type="text" name="lokasi" id="input-lokasi"><br>
+            <label for="year">Years Experience</label>
+            <input type="number" name="year" id="input-year"><br>
+            <label for="Email">Email</label>
+            <input type="email" name="email" id="input-email"><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
